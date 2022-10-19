@@ -1,0 +1,22 @@
+{
+  "protocol": "https",
+  "hostname": "moodle.caseine.org",
+  "path": "/webservice/rest/server.php",
+  "personalToken": "09cdb18a8b518d9e706ae602c4ed496e",
+  "vplId": "21457",
+  "useWebsocket": false,
+  "useUnsecureURL": false,
+  "files": [
+    "clients/Client.java",
+    "clients/Particulier.java",
+    "clients/Civilite.java",
+    "clients/Entreprise.java",
+    "quincaillerie/PieceDeBase.java",
+    "quincaillerie/PieceCompositeEnKit.java",
+    "quincaillerie/Quincaillerie.java",
+    "quincaillerie/Catalogue.java",
+    "quincaillerie/PieceComposite.java",
+    "quincaillerie/PieceCompositeMontee.java",
+    "quincaillerie/Piece.java"
+  ]
+}
