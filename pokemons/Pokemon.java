@@ -15,7 +15,7 @@ public abstract class Pokemon{
 
     @Override
     public String toString(){
-        return "Je suis le pokemon"+ this.nom +"mon poids est de"+ getPoids()+"kg, ma vitesse est de";
+        return "Je suis le pokemon "+ this.nom + "mon poids est de"+ getPoids()+"kg, ma vitesse est de";
     }
 
     protected double getPoids(){

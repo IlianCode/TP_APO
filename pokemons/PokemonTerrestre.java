@@ -15,7 +15,7 @@ public abstract class PokemonTerrestre extends Pokemon{
 
     @Override 
     public double vitesse(){
-        return pattes*taille*getPoids();
+        return pattes*taille*3;
     }
     
     @Override
