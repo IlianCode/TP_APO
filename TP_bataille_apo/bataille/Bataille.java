@@ -43,42 +43,44 @@ public class Bataille{
 		res = joueurDroite;
 		int valDroite ;
 		int valGauche;
-		if(joueurDroite.carte.valeur.getNom() == "sept"){
-			valDroite =1;
-		}else if(joueurDroite.carte.valeur.getNom() =="huit"){
-			valDroite =2;
-		}else if(joueurDroite.carte.valeur.getNom() == "neuf"){
-			valDroite =3;
-		}else if(joueurDroite.carte.valeur.getNom() =="dix"){
-			valDroite =4;
-		}else if(joueurDroite.carte.valeur.getNom() == "valet"){
-			valDroite =5;
-		}else if(joueurDroite.carte.valeur.getNom() == "dame"){
-			valDroite =6;
-		}else if(joueurDroite.carte.valeur.getNom() == "roi"){
-			valDroite =7;
-		}else{
-			valDroite =8;
+		switch(joueurDroite.carte.valeur.getNom()){
+			case "sept": valDroite =1;
+			break;
+			case "huit": valDroite =2;
+			break;
+			case "neuf": valDroite =3;
+			break;
+			case "dix": valDroite =4;
+			break;
+			case "valet": valDroite =5;
+			break;
+			case "dame": valDroite =6;
+			break;
+			case "roi": valDroite =7;
+			break;
+			default: valDroite =8;
+			break;
 		}
+		
 
-		if(joueurGauche.carte.valeur.getNom() == "sept"){
-			valGauche =1;
-		}else if(joueurGauche.carte.valeur.getNom() =="huit"){
-			valGauche =2;
-		}else if(joueurGauche.carte.valeur.getNom() == "neuf"){
-			valGauche =3;
-		}else if(joueurGauche.carte.valeur.getNom() =="dix"){
-			valGauche =4;
-		}else if(joueurGauche.carte.valeur.getNom() == "valet"){
-			valGauche =5;
-		}else if(joueurGauche.carte.valeur.getNom() == "dame"){
-			valGauche =6;
-		}else if(joueurGauche.carte.valeur.getNom() == "roi"){
-			valGauche =7;
-		}else{
-			valGauche =8;
+		switch (joueurGauche.carte.valeur.getNom()){
+			case "sept": valGauche =1;
+			break;
+			case "huit": valGauche =2;
+			break;
+			case "neuf": valGauche =3;
+			break;
+			case "dix": valGauche =4;
+			break;
+			case "valet": valGauche =5;
+			break;
+			case "dame": valGauche =6;
+			break;
+			case "roi": valGauche =7;
+			break;
+			default: valGauche =8;
+			break;
 		}
-
 		if(valDroite < valGauche){
 			res = joueurGauche;
 		}else if(valDroite == valGauche){
